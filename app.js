@@ -96,7 +96,10 @@ app.get('/1', function (req, res) {
 	client.write("\n");
 });
 });
-
+var http = require("http");
+setInterval(function() {
+    http.get("http://frozen-fortress-64570.herokuapp.com");
+}, 300000);
 
 // -------------------------------     Menu     -------------------------------
 var pergunta = function () {
